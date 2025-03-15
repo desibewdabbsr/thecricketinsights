@@ -24,7 +24,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">
         <div className="text-center px-4">
           <img 
-            src="/logo.png" 
+            src="./logo.png" 
             alt="Cricket Insights Logo" 
             className="w-48 h-48 mx-auto mb-8 animate-bounce"
           />
@@ -46,11 +46,11 @@ export default function Home() {
           </div>
 
           <p className="text-xl text-green-400 mb-4">
-            Ipl 72/66 Matches Pass..🏆
+            BBL 72/66 Matches Pass..🏆
           </p>
 
           <p className="text-xl text-white mb-8">
-            Sports Analyst With Gujrati Mind 🤫💚💚
+            💚Robust Sports Analyst 🤫💚💚
           </p>
 
           <a

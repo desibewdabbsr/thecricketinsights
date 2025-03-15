@@ -20,13 +20,19 @@ export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
       <VideoBackground />
-      
-      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+
+      <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">
         <div className="text-center px-4">
+          <img 
+            src="/logo.png" 
+            alt="Cricket Insights Logo" 
+            className="w-48 h-48 mx-auto mb-8 animate-bounce"
+          />
+
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
-            SISIR
+            The Cricket Insights 🏏
           </h1>
-          
+
           <p className="text-2xl md:text-3xl text-white mb-8 animate-fade-in-delay">
             Wolrd Ka Sabse Popular Banda!💯
           </p>
@@ -42,7 +48,7 @@ export default function Home() {
           <p className="text-xl text-green-400 mb-4">
             Ipl 72/66 Matches Pass..🏆
           </p>
-          
+
           <p className="text-xl text-white mb-8">
             Sports Analyst With Gujrati Mind 🤫💚💚
           </p>

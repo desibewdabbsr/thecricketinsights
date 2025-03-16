@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import VideoBackground from "@/components/VideoBackground";
+import Background from "@/components/Background";
 import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
-      <VideoBackground />
+      <Background />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="text-center px-4">

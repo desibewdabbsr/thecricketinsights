@@ -7,7 +7,7 @@ import Home from "@/pages/home";
 // Update Router to handle GitHub Pages base path
 function Router() {
   // Get base from environment or default for GitHub Pages
-  const base = import.meta.env.BASE_URL;
+  const base = import.meta.env.VITE_BASE_URL || '/';
 
   return (
     <Switch base={base}>

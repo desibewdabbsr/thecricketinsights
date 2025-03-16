@@ -4,13 +4,9 @@ import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import Home from "@/pages/home";
 
-// Update Router to handle GitHub Pages base path
 function Router() {
-  // Get base from environment or default for GitHub Pages
-  const base = import.meta.env.VITE_BASE_URL || '/';
-
   return (
-    <Switch base={base}>
+    <Switch>
       <Route path="/" component={Home} />
     </Switch>
   );

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Background from "@/components/Background";
+import VideoBackground from "@/components/VideoBackground";
 import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
@@ -19,12 +19,12 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
-      <Background />
+      <VideoBackground />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="text-center px-4">
           <img 
-            src={`${import.meta.env.VITE_BASE_URL || '/'}logo.png`}
+            src="./logo.png" 
             alt="Cricket Insights Logo" 
             className="w-48 h-48 mx-auto mb-8 animate-bounce"
           />

@@ -4,7 +4,7 @@ export default function VideoBackground() {
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("/background.png")',
+          backgroundImage: `url("${import.meta.env.BASE_URL}background.png")`,
           zIndex: -2
         }}
       />

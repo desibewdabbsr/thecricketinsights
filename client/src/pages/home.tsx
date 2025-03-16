@@ -24,7 +24,7 @@ export default function Home() {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="text-center px-4">
           <img 
-            src="./logo.png" 
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Cricket Insights Logo" 
             className="w-48 h-48 mx-auto mb-8 animate-bounce"
           />

@@ -29,6 +29,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Copy assets to public folder before build
+      - name: Copy Assets
+        run: |
+          mkdir -p client/public
+          cp attached_assets/background.png client/public/
+          cp attached_assets/logo.png client/public/
+
       - name: Build
         run: npm run build
         env:

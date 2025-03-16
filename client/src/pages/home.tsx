@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import VideoBackground from "@/components/VideoBackground";
 import CountdownTimer from "@/components/CountdownTimer";
 
@@ -27,6 +27,8 @@ export default function Home() {
             src="./logo.png" 
             alt="Cricket Insights Logo" 
             className="w-48 h-48 mx-auto mb-8 animate-bounce"
+            loading="lazy"
+            decoding="async"
           />
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-pulse transform transition-transform hover:scale-110">
@@ -64,6 +66,7 @@ export default function Home() {
               transform hover:scale-110 
               animate-pulse hover:animate-none
               shadow-lg hover:shadow-xl
+              will-change-transform
               ${isRedirecting ? "animate-ping" : ""}
             `}
           >
